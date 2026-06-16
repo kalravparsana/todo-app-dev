@@ -1,0 +1,158 @@
+{
+  "version": "1.0.0",
+  "project": {
+    "name": "todo-app-dev",
+    "languages": [
+      "markdown",
+      "unknown"
+    ],
+    "frameworks": [],
+    "description": "Development repository for todo-app-dev that references the launchpad-frontend submodule (YorkIE-Launchpad/todo-app) for the actual frontend application code.",
+    "analyzedAt": "2026-06-16T16:54:17Z",
+    "gitCommitHash": "eff28dfb6aec72476fa15f57ce1fae126ce44819"
+  },
+  "nodes": [
+    {
+      "id": "document:README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "README.md",
+      "summary": "Root project documentation that identifies this repository as todo-app-dev, an auto-generated development wrapper repository.",
+      "description": "Provides the top-level project title and a brief note that this is an auto-generated repository for todo-app-dev. Serves as the entry point for understanding the repository's purpose before exploring submodule configuration.",
+      "tags": [
+        "documentation",
+        "onboarding",
+        "root"
+      ],
+      "complexity": "simple",
+      "languageNotes": null
+    },
+    {
+      "id": "file:.gitmodules",
+      "type": "file",
+      "name": ".gitmodules",
+      "filePath": ".gitmodules",
+      "summary": "Git submodule configuration that links the launchpad-frontend submodule to the YorkIE-Launchpad/todo-app repository.",
+      "description": "Defines a single submodule named launchpad-frontend checked out at path launchpad-frontend, pointing to https://github.com/YorkIE-Launchpad/todo-app.git. This file is the structural bridge between the development wrapper repo and the actual frontend application source.",
+      "tags": [
+        "git",
+        "submodule",
+        "configuration",
+        "frontend"
+      ],
+      "complexity": "simple",
+      "languageNotes": null
+    },
+    {
+      "id": "config:.understand-anything/.understandignore",
+      "type": "config",
+      "name": ".understandignore",
+      "filePath": ".understand-anything/.understandignore",
+      "summary": "Understand-Anything ignore patterns file that controls which files are excluded from knowledge graph analysis.",
+      "description": "Contains glob patterns (same syntax as .gitignore) for excluding files and directories from the Understand-Anything scan pipeline. Currently contains only the header comment with no active exclusion patterns.",
+      "tags": [
+        "understand-anything",
+        "configuration",
+        "ignore-patterns"
+      ],
+      "complexity": "simple",
+      "languageNotes": null
+    },
+    {
+      "id": "module:launchpad-frontend",
+      "type": "module",
+      "name": "launchpad-frontend",
+      "filePath": "launchpad-frontend",
+      "summary": "Git submodule that holds the todo-app frontend application source from YorkIE-Launchpad/todo-app.",
+      "description": "External submodule referenced by .gitmodules. The actual React/application code lives in this separate repository and is not tracked as files in the parent repo's git index. Clone with git submodule update --init to materialize the frontend source locally.",
+      "tags": [
+        "submodule",
+        "frontend",
+        "external",
+        "todo-app"
+      ],
+      "complexity": "simple",
+      "languageNotes": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:.gitmodules",
+      "target": "module:launchpad-frontend",
+      "type": "configures",
+      "weight": 0.8,
+      "label": "declares submodule",
+      "direction": "forward"
+    },
+    {
+      "source": "document:README.md",
+      "target": "file:.gitmodules",
+      "type": "related",
+      "weight": 0.5,
+      "label": "project context references submodule setup",
+      "direction": "forward"
+    },
+    {
+      "source": "config:.understand-anything/.understandignore",
+      "target": "document:README.md",
+      "type": "configures",
+      "weight": 0.5,
+      "label": "analysis scope configuration",
+      "direction": "forward"
+    }
+  ],
+  "layers": [
+    {
+      "id": "layer:documentation",
+      "name": "Documentation",
+      "description": "Project documentation and onboarding materials that describe the repository purpose and structure.",
+      "nodeIds": [
+        "document:README.md"
+      ]
+    },
+    {
+      "id": "layer:configuration",
+      "name": "Configuration",
+      "description": "Repository configuration files including git submodule definitions and analysis tooling settings.",
+      "nodeIds": [
+        "file:.gitmodules",
+        "config:.understand-anything/.understandignore"
+      ]
+    },
+    {
+      "id": "layer:external-modules",
+      "name": "External Modules",
+      "description": "Git submodules and external code dependencies referenced but not tracked directly in this repository.",
+      "nodeIds": [
+        "module:launchpad-frontend"
+      ]
+    }
+  ],
+  "tour": [
+    {
+      "order": 1,
+      "title": "Project Overview",
+      "description": "Start with the root README to understand that todo-app-dev is a development wrapper repository auto-generated for the todo application.",
+      "nodeIds": [
+        "document:README.md"
+      ]
+    },
+    {
+      "order": 2,
+      "title": "Submodule Configuration",
+      "description": "Examine .gitmodules to see how the launchpad-frontend submodule connects this repo to the actual frontend application at YorkIE-Launchpad/todo-app.",
+      "nodeIds": [
+        "file:.gitmodules",
+        "module:launchpad-frontend"
+      ]
+    },
+    {
+      "order": 3,
+      "title": "Analysis Configuration",
+      "description": "Review the Understand-Anything ignore configuration that controls which files are included in knowledge graph scans.",
+      "nodeIds": [
+        "config:.understand-anything/.understandignore"
+      ]
+    }
+  ]
+}
