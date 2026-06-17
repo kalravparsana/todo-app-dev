@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 180" fill="none" role="img">
+  <title>No projects yet</title>
+  <ellipse cx="120" cy="142" rx="72" ry="12" fill="#1C1917" opacity="0.05"/>
+  <path d="M85 118C92 102 108 96 120 104C132 112 130 130 114 134C98 138 80 130 85 118Z" fill="#5B6EAE" opacity="0.35"/>
+  <path d="M115 112C122 96 138 90 150 98C162 106 160 124 144 128C128 132 110 124 115 112Z" fill="#2D6A4F" opacity="0.4"/>
+  <path d="M145 116C152 100 168 94 180 102" stroke="#C87941" stroke-width="2.5" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,20 @@
+# secrets / env
+.env
+.env.*
+*.env
+
+# node
+node_modules/
+dist/
+build/
+
+# terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+
+# misc
+.DS_Store
+*.log
+playwright-report/
+test-results/

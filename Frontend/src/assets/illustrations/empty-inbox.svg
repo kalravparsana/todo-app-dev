@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 180" fill="none" role="img">
+  <title>Inbox waiting for tasks</title>
+  <ellipse cx="120" cy="145" rx="80" ry="14" fill="#1C1917" opacity="0.05"/>
+  <path d="M70 110C78 95 92 88 105 95C118 102 118 122 102 128C86 134 64 126 70 110Z" fill="#2D6A4F" opacity="0.25"/>
+  <path d="M100 105C108 90 122 83 135 90C148 97 148 117 132 123C116 129 94 121 100 105Z" fill="#2D6A4F" opacity="0.35"/>
+  <path d="M130 108C138 93 152 86 165 93C178 100 178 120 162 126C146 132 124 124 130 108Z" fill="#2D6A4F" opacity="0.45"/>
+  <path d="M55 75L185 75" stroke="#C87941" stroke-width="2" stroke-linecap="round" opacity="0.35"/>
+</svg>

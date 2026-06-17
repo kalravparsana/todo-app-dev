@@ -1,0 +1,30 @@
+[
+  {
+    "ParameterKey": "EnvironmentName",
+    "ParameterValue": "dev"
+  },
+  {
+    "ParameterKey": "EcrImageUri",
+    "ParameterValue": "placeholder"
+  },
+  {
+    "ParameterKey": "DatabaseUsername",
+    "ParameterValue": "meridian"
+  },
+  {
+    "ParameterKey": "DatabaseName",
+    "ParameterValue": "meridian_todo"
+  },
+  {
+    "ParameterKey": "DesiredCount",
+    "ParameterValue": "1"
+  },
+  {
+    "ParameterKey": "CorsOrigins",
+    "ParameterValue": "*"
+  },
+  {
+    "ParameterKey": "EcrRepositoryName",
+    "ParameterValue": "meridian-todo-api"
+  }
+]

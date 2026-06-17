@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 180" fill="none" role="img">
+  <title>Nothing committed yet</title>
+  <path d="M40 130C80 110 120 115 160 100C180 92 200 95 210 90" stroke="#2D6A4F" stroke-width="2.5" stroke-linecap="round" opacity="0.4"/>
+  <ellipse cx="120" cy="138" rx="70" ry="12" fill="#1C1917" opacity="0.05"/>
+  <path d="M95 95C102 82 115 78 125 86C133 93 128 108 115 112C102 116 90 106 95 95Z" fill="#2D6A4F" opacity="0.3"/>
+  <path d="M145 98C152 86 165 82 175 90C183 97 178 112 165 116C152 120 140 110 145 98Z" fill="#C87941" opacity="0.35"/>
+  <path d="M60 70L180 70" stroke="#2D6A4F" stroke-width="2" stroke-linecap="round" opacity="0.2"/>
+</svg>

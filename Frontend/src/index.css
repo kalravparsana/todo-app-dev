@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #faf8f5;
+  --surface: #ffffff;
+  --foreground: #1c1917;
+  --muted: #f0ebe4;
+  --muted-foreground: #78716c;
+  --primary: #2d6a4f;
+  --primary-foreground: #f5faf7;
+  --accent: #e8f0ec;
+  --accent-foreground: #1a4d38;
+  --border: #e7e0d8;
+  --ring: #2d6a4f;
+  --success: #3d7a5c;
+  --warning: #b45309;
+  --destructive: #b91c1c;
+  --today: #c87941;
+}
+
+.dark {
+  --background: #141210;
+  --surface: #1f1c19;
+  --foreground: #f5f2ed;
+  --muted: #2a2622;
+  --muted-foreground: #a8a29e;
+  --primary: #4ade80;
+  --primary-foreground: #052e16;
+  --accent: #1f2e27;
+  --accent-foreground: #bbf7d0;
+  --border: #3d3832;
+  --ring: #4ade80;
+  --success: #4ade80;
+  --warning: #fbbf24;
+  --destructive: #f87171;
+  --today: #e8a065;
+}
+
+@layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply bg-background font-sans text-[15px] text-foreground antialiased;
+    margin: 0;
+    min-height: 100vh;
+  }
+
+  #root {
+    min-height: 100vh;
+  }
+
+  :focus-visible {
+    @apply outline-none ring-2 ring-ring ring-offset-2 ring-offset-background;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}

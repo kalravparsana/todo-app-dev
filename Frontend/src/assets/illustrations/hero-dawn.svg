@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 320" fill="none" role="img">
+  <title>Morning intention</title>
+  <rect width="480" height="320" fill="#E8F0EC"/>
+  <path d="M0 220C80 180 160 200 240 175C320 150 400 165 480 140V320H0V220Z" fill="#2D6A4F" opacity="0.15"/>
+  <path d="M60 210C140 170 220 190 300 165C360 148 410 155 440 148" stroke="#2D6A4F" stroke-width="3" stroke-linecap="round"/>
+  <path d="M380 95L420 135L460 85" stroke="#C87941" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="420" cy="110" r="28" fill="#C87941" opacity="0.2"/>
+  <ellipse cx="120" cy="248" rx="36" ry="10" fill="#1C1917" opacity="0.06"/>
+  <ellipse cx="300" cy="252" rx="28" ry="8" fill="#1C1917" opacity="0.05"/>
+  <path d="M100 230C108 218 118 212 128 218C136 224 132 238 120 242C108 246 96 240 100 230Z" fill="#2D6A4F" opacity="0.35"/>
+  <path d="M280 232C288 222 298 218 306 224C314 230 310 242 300 246C290 250 278 242 280 232Z" fill="#2D6A4F" opacity="0.25"/>
+</svg>

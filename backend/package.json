@@ -1,0 +1,28 @@
+{
+  "name": "meridian-todo-api",
+  "version": "1.0.2",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx watch src/index.ts",
+    "migrate": "node dist/db/migrate.js",
+    "seed": "node dist/db/seed.js",
+    "docker:build": "docker build -t meridian-todo-api ."
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "pg": "^8.16.0",
+    "zod": "^3.25.56"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.18",
+    "@types/express": "^5.0.2",
+    "@types/node": "^22.15.30",
+    "@types/pg": "^8.15.4",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3"
+  }
+}
